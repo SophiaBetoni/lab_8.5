@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f1ec;
+  color: #2b2623;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #3b2f2a;
+  color: #fff;
+}
+header h1 { margin: 0; font-size: 1.3rem; }
+#barra-usuario { display: flex; gap: 10px; align-items: center; }
+main { max-width: 720px; margin: 20px auto; padding: 0 16px; }
+.cartao {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+h2 { margin-top: 0; font-size: 1.1rem; }
+h3 { font-size: 0.95rem; margin-bottom: 4px; }
+form { display: flex; flex-direction: column; gap: 8px; }
+.linha { display: flex; flex-wrap: wrap; gap: 8px; }
+.linha input { flex: 1; min-width: 140px; }
+input, select {
+  padding: 9px 10px;
+  border: 1px solid #cfc7bd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+button {
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #8c4a2f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+button.secundario { background: #e4ddd3; color: #2b2623; }
+.abas { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+.abas button { background: #e4ddd3; color: #2b2623; }
+.abas button.ativa { background: #8c4a2f; color: #fff; }
+ul { list-style: none; padding: 0; margin: 0; }
+li.leitura {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee7dd;
+}
+li.leitura:last-child { border-bottom: 0; }
+.autor { color: #766c63; font-size: 0.85rem; }
+.acoes { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.acoes button { padding: 5px 9px; font-size: 0.8rem; }
+#mensagem { min-height: 1.3em; color: #b3261e; text-align: center; }
+[hidden] { display: none !important; }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leitor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Leitor</h1>
+    <div id="barra-usuario" hidden>
+      <span id="nome-usuario"></span>
+      <button id="btn-sair" class="secundario">Sair</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Login / cadastro -->
+    <section id="tela-login" class="cartao">
+      <h2>Entrar</h2>
+      <form id="form-login">
+        <input id="login-usuario" placeholder="Usuário" required minlength="3" />
+        <input id="login-senha" type="password" placeholder="Senha" required minlength="4" />
+        <div class="linha">
+          <button type="submit">Entrar</button>
+          <button type="button" id="btn-registrar" class="secundario">Criar conta</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- App -->
+    <div id="tela-app" hidden>
+      <section class="cartao">
+        <h2>Meu perfil</h2>
+        <p id="resumo-perfil"></p>
+        <h3>Top 3 favoritos</h3>
+        <ol id="lista-favoritos"></ol>
+      </section>
+
+      <section class="cartao">
+        <h2>Adicionar livro</h2>
+        <form id="form-livro" class="linha">
+          <input id="livro-titulo" placeholder="Título" required />
+          <input id="livro-autor" placeholder="Autor" required />
+          <select id="livro-status">
+            <option value="quero_ler">Quero ler</option>
+            <option value="lendo">Lendo</option>
+            <option value="lido">Lido</option>
+          </select>
+          <button type="submit">Adicionar</button>
+        </form>
+      </section>
+
+      <section class="cartao">
+        <h2>Minhas leituras</h2>
+        <div class="abas" id="abas">
+          <button data-status="" class="ativa">Todos</button>
+          <button data-status="lido">Lidos</button>
+          <button data-status="lendo">Lendo</button>
+          <button data-status="quero_ler">Quero ler</button>
+        </div>
+        <ul id="lista-leituras"></ul>
+      </section>
+    </div>
+
+    <p id="mensagem" role="alert"></p>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
