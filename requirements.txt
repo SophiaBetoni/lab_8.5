@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+# Para o deploy com PostgreSQL (8.6), descomente a linha abaixo:
+# psycopg2-binary
