@@ -53,9 +53,4 @@ Rotas autenticadas usam o cabeçalho `Authorization: Bearer <token>`.
 - `DATABASE_URL`: URL do banco. Padrão: SQLite local (`livraria.db`). No deploy, use PostgreSQL.
 - `ALLOWED_ORIGINS`: URL(s) do front-end liberadas no CORS, separadas por vírgula. Padrão: `*`.
 
-## Deploy (Exercício 8.6)
 
-1. Publique o `backend/` e anote a URL pública.
-2. Em `frontend/config.js`, troque `API_URL` por essa URL.
-3. Publique o `frontend/` e anote a URL.
-4. No back-end, defina `ALLOWED_ORIGINS` com a URL do front-end.
